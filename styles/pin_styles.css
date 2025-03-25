@@ -134,6 +134,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    margin-left: 1%;
+}
+
 /* nav li {
     list-style: none;
     text-decoration: none;
@@ -153,14 +157,21 @@ nav ul {
     display: flex;
     align-items: center; /* items aligned in a row */
     
-    gap: 20px; /* space between nav items */
+    gap: 2rem; /* space between nav items */
     padding: 0;
     margin: 0;
     min-height: 50px;
+
+    display: flex;
+    justify-content: space-between; /* Ensures natural spacing */
+    align-items: center;
+    width: 90%; /* Makes it responsive */
+    padding: 0 2rem; /* Adds some space on thesides */
+    flex-wrap: wrap;
 }
 
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -171,12 +182,27 @@ li {
 }
 
 .shop-space-right {
-    margin-right: 38rem;
+    margin-right: 10rem;
 }
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+    .shop-space-right {
+        margin-right: 5rem;
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+    .shop-space-right {
+        margin-right: 1rem;
+    }
+}
+
 
 nav {
     /* margin-left: 1.2%; */
-    margin-top: 1%;
+    margin-top: 1.4%;
 }
 
 
